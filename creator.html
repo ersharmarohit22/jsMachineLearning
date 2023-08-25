@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Creator</title>
+    <style>
+      body{
+        font-family: Arial;
+        background-color: skyblue;
+      }
+      #content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Data Creator</h1>
+      <br>
+      <div id="sketchPadContainer"></div>
+    </div>
+    <script src="js/draw.js"></script>
+    <script src="js/sketchPad.js"></script>
+    <script>
+      const sketchPad = new SketchPad(sketchPadContainer)
+    </script>
+  </body>
+</html>
